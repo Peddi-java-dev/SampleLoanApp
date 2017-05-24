@@ -13,6 +13,7 @@ Install it using doc https://docs.oracle.com/middleware/12211/jdev/install/toc.h
 Open the code/ThamesSterlingLoans/ThamesSterlingLoansApp.jws file in the Jdeveloper IDE to navigate the code.
 Upate the db details in the application.
 Build the projects and application. Deploy to the weblogic application server.
- 
+
+Note: It is not completed fully, could not spend enough time to make it complete solution.   
 
 
