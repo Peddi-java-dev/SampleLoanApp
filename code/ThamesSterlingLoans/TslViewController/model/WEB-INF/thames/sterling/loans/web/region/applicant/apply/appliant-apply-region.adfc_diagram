@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View3">
+      <property
+         name="activityId">applicant_apply</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">452.40137</property>
+      <property
+         name="start">false</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>applicant_apply&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">102.26758</property>
+      <property
+         name="page">/thames/sterling/loans/web/applicant/apply/applicantApply.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <MethodCall
+      id="MethodCall3">
+      <property
+         name="activityId">initializeObjects</property>
+      <property
+         name="x">187.6836</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>initializeObjects&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
+      <property
+         name="y">101.99414</property>
+      <property
+         name="exceptionHandler">false</property>
+   </MethodCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="MethodCall3"
+      to="View3">
+      <property
+         name="fromOutcome">apply</property>
+      <property
+         name="sdm:polyPoints">R50,228.6836,101.643555,411.40137,101.91699,L50</property>
+   </ControlFlowCase>
+</SDM>

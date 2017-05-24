@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ApplicantPersonalDetailsEO"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="TSL_APLCNT_PER_DETAILS"
+  AliasName="ApplicantPersonalDetailsEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="ApplicantId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="APPLICANT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_PER_DETAILS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Title"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="TITLE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FirstName"
+    IsNotNull="true"
+    Precision="150"
+    ColumnName="FIRST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MiddleName"
+    Precision="150"
+    ColumnName="MIDDLE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastName"
+    IsNotNull="true"
+    Precision="150"
+    ColumnName="LAST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DateOfBirth"
+    IsNotNull="true"
+    ColumnName="DATE_OF_BIRTH"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="TSL_APLCNT_PER_DETAILS"/>
+  <Attribute
+    Name="MobileNumber"
+    Precision="60"
+    ColumnName="MOBILE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="HomePhoneNumber"
+    Precision="60"
+    ColumnName="HOME_PHONE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EMailId"
+    Precision="254"
+    ColumnName="E_MAIL_ID"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="254"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LoanApprovalStatus"
+    Precision="18"
+    ColumnName="LOAN_APPROVAL_STATUS"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_PER_DETAILS"
+    Scale="0">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    Precision="256"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_APLCNT_PER_DETAILS"/>
+  <Attribute
+    Name="ChangedBy"
+    Precision="256"
+    ColumnName="CHANGED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ChangedDate"
+    ColumnName="CHANGED_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_APLCNT_PER_DETAILS"/>
+  <Attribute
+    Name="RevisionNumber"
+    Precision="5"
+    Scale="0"
+    ColumnName="REVISION_NUMBER"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_PER_DETAILS"/>
+  <Attribute
+    Name="PersonType"
+    Precision="20"
+    ColumnName="PERSON_TYPE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_PER_DETAILS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="GuarantorId"
+    Precision="19"
+    Scale="0"
+    ColumnName="GUARANTOR_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigInteger"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_PER_DETAILS"/>
+  <AccessorAttribute
+    Name="ApplicantPersonalDetailsEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc.ApplicantPersonalDetailsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc.GuarantorIdApplicantPersonalDetailsEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="GuarantorIdApplicantPersonalDetailsEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc.GuarantorIdApplicantPersonalDetailsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToGuarantorFk1Assoc.ApplicantPersonalDetailsEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="ApplicantAddressEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc.ApplicantAddressEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc.ApplicantPersonalDetailsEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="ApplicantFinanceDetailsEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToFinanceDetailsFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToFinanceDetailsFk1Assoc.ApplicantFinanceDetailsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToFinanceDetailsFk1Assoc.ApplicantPersonalDetailsEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="LoanApprovalStatusesEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.TslAplcntPerDetailsFk2Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.TslAplcntPerDetailsFk2Assoc.LoanApprovalStatusesEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.TslAplcntPerDetailsFk2Assoc.ApplicantPersonalDetailsEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="TslAplcntPerDetailsPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TSL_APLCNT_PER_DETAILS_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.ApplicantPersonalDetailsEO.ApplicantId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslAplcntPerDetailsFk1">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_APLCNT_PER_DETAILS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_APLCNT_PER_DETAILS_FK1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.ApplicantPersonalDetailsEO.GuarantorId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslAplcntPerDetailsFk2">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_LOAN_APPROVAL_STATUSES_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_APLCNT_PER_DETAILS_FK2"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.ApplicantPersonalDetailsEO.LoanApprovalStatus"/>
+    </AttrArray>
+  </Key>
+</Entity>

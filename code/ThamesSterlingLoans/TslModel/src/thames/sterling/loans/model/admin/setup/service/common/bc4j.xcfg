@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="thames.sterling.loans.model.admin.setup.service.AdminSetupService">
+    <AppModuleConfig name="AdminSetupServiceLocal" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.admin.setup.service.AdminSetupService"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.admin.setup.service.AdminSetupService"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="AdminSetupServiceShared" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.admin.setup.service.AdminSetupService"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.admin.setup.service.AdminSetupService"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="thames.sterling.loans.model.applicant.service.ApplicantService">
+    <AppModuleConfig name="ApplicantServiceLocal" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.applicant.service.ApplicantService"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.applicant.service.ApplicantService"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="ApplicantServiceShared" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.applicant.service.ApplicantService"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.applicant.service.ApplicantService"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

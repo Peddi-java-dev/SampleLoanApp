@@ -1,0 +1,8 @@
+The following Synchronization Actions were performed successfully:
+
+Entity :ApplicantPersonalDetailsEO
+  Attribute :LoanApprovalStatus
+    Change Column type to NUMBER(18,0)
+    Change Precision, Scale  to (18, 0)
+  Create Key for Constraint: TSL_APLCNT_PER_DETAILS_FK2
+  Create Entity Association

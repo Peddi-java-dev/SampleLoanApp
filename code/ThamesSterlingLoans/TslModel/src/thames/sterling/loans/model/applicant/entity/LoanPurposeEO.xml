@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="LoanPurposeEO"
+  Version="12.2.1.12.24"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="TSL_LOAN_PURPOSE"
+  AliasName="TslLoanPurpose"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="LoanPurposeId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="LOAN_PURPOSE_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_PURPOSE"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="LoanPurposeName"
+    Precision="240"
+    ColumnName="LOAN_PURPOSE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_LOAN_PURPOSE">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="DataPartition"
+    Precision="128"
+    ColumnName="DATA_PARTITION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_LOAN_PURPOSE">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="128"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="ApplicantFinanceDetailsEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.TslAplcntFinDtlsFk3Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.TslAplcntFinDtlsFk3Assoc.ApplicantFinanceDetailsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.TslAplcntFinDtlsFk3Assoc.LoanPurposeEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="TslLoanPurposePk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TSL_LOAN_PURPOSE_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.LoanPurposeEO.LoanPurposeId"/>
+    </AttrArray>
+  </Key>
+</Entity>

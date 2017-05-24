@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="LoanAgreementsEO"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="TSL_LOAN_AGREEMENTS"
+  AliasName="LoanAgreements"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="LoanAgrmtRefId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="LOAN_AGRMT_REF_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="ApplicantId"
+    Precision="18"
+    Scale="0"
+    ColumnName="APPLICANT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="LoanTypeId"
+    ColumnName="LOAN_TYPE_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="AgrmtStartDate"
+    ColumnName="AGRMT_START_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="AgrmtEndDate"
+    ColumnName="AGRMT_END_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="LoanTermMonths"
+    Precision="5"
+    Scale="0"
+    ColumnName="LOAN_TERM_MONTHS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="LoanTermYears"
+    Precision="3"
+    Scale="0"
+    ColumnName="LOAN_TERM_YEARS"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="LoanAmount"
+    Precision="19"
+    Scale="4"
+    ColumnName="LOAN_AMOUNT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="InterestRate"
+    Precision="19"
+    Scale="4"
+    ColumnName="INTEREST_RATE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="ArrangementFee"
+    Precision="19"
+    Scale="4"
+    ColumnName="ARRANGEMENT_FEE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="PremiumArrangeFee"
+    Precision="19"
+    Scale="4"
+    ColumnName="PREMIUM_ARRANGE_FEE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="QuickFundTxrFee"
+    Precision="19"
+    Scale="4"
+    ColumnName="QUICK_FUND_TXR_FEE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="EarlyRepayFee"
+    Precision="19"
+    Scale="4"
+    ColumnName="EARLY_REPAY_FEE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="MissedPayFee"
+    Precision="19"
+    Scale="4"
+    ColumnName="MISSED_PAY_FEE"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="PayProtecInsurReqFlag"
+    Precision="1"
+    ColumnName="PAY_PROTEC_INSUR_REQ_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_LOAN_AGREEMENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="RelationshipManager"
+    Precision="18"
+    Scale="0"
+    ColumnName="RELATIONSHIP_MANAGER"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="RevisionNumber"
+    Precision="5"
+    Scale="0"
+    ColumnName="REVISION_NUMBER"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="CreatedBy"
+    Precision="256"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_LOAN_AGREEMENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <Attribute
+    Name="ChangedBy"
+    Precision="256"
+    ColumnName="CHANGED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_LOAN_AGREEMENTS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ChangedDate"
+    ColumnName="CHANGED_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_LOAN_AGREEMENTS"/>
+  <AccessorAttribute
+    Name="StaffEO"
+    Association="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc"
+    AssociationEnd="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc.StaffEO"
+    AssociationOtherEnd="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc.LoanAgreementsEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="TslLoanAgreementsPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TSL_LOAN_AGREEMENTS_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.LoanAgreementsEO.LoanAgrmtRefId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslLoanAgreementsFk1">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_APLCNT_PER_DETAILS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_LOAN_AGREEMENTS_FK1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.LoanAgreementsEO.ApplicantId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslLoanAgreementsFk2">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_LOAN_TYPES_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_LOAN_AGREEMENTS_FK2"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.LoanAgreementsEO.LoanTypeId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslLoanAgreementsFk3">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_STAFF_DETAIL_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_LOAN_AGREEMENTS_FK3"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.LoanAgreementsEO.RelationshipManager"/>
+    </AttrArray>
+  </Key>
+</Entity>

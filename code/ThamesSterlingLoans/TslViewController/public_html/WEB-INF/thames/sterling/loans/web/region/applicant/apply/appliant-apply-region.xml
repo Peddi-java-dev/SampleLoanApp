@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="appliant-apply-region">
+    <default-activity>initializeObjects</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__3">
+      <name>applyLoanData</name>
+      <value>#{pageFlowScope.loanApplyData}</value>
+      <class>thames.sterling.loans.view.ApplyLoanBean</class>
+    </input-parameter-definition>
+    <view id="applicant_apply">
+      <page>/thames/sterling/loans/web/applicant/apply/applicantApply.jsff</page>
+      <view-id>/applicant-apply</view-id>
+    </view>
+    <method-call id="initializeObjects">
+      <method>#{bindings.initializeObjects.execute}</method>
+      <outcome>
+        <fixed-outcome>apply</fixed-outcome>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__1">
+      <from-activity-id>initializeObjects</from-activity-id>
+      <control-flow-case id="__2">
+        <from-outcome>apply</from-outcome>
+        <to-activity-id>applicant_apply</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

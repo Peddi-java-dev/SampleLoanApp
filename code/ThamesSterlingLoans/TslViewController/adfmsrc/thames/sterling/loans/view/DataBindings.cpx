@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.12.24" id="DataBindings"
+             SeparateXMLFiles="false" Package="thames.sterling.loans.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/Index.jspx" usageId="thames_sterling_loans_view_IndexPageDef"/>
+    <page path="/thames/sterling/loans/web/applicant/apply/applicantApply.jsff"
+          usageId="thames_sterling_loans_view_applicantApplyPageDef"/>
+    <page path="/WEB-INF/thames/sterling/loans/web/region/applicant/apply/appliant-apply-region.xml#appliant-apply-region@initializeObjects"
+          usageId="thames_sterling_loans_view_appliant_apply_region_appliant_apply_region_initializeObjectsPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="thames_sterling_loans_view_IndexPageDef" path="thames.sterling.loans.view.pageDefs.IndexPageDef"/>
+    <page id="thames_sterling_loans_view_applicantApplyPageDef"
+          path="thames.sterling.loans.web.applicant.apply.applicantApplyPageDef"/>
+    <page id="thames_sterling_loans_view_appliant_apply_region_appliant_apply_region_initializeObjectsPageDef"
+          path="thames.sterling.loans.web.region.applicant.apply.appliant_apply_region_appliant_apply_region_initializeObjectsPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="ApplicantServiceDataControl" Package="thames.sterling.loans.model.applicant.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="ApplicantServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+    <BC4JDataControl id="LoanEngineServiceDataControl" Package="thames.sterling.loans.model.loanengine.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="LoanEngineServiceLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>

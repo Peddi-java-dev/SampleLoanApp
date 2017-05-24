@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ApplicantAddressEO"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="TSL_APLCNT_ADDRESS"
+  AliasName="ApplicantAddressEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="AplcntAddressId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="APLCNT_ADDRESS_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_ADDRESS"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="ApplicantId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="APPLICANT_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <Attribute
+    Name="AddressLine1"
+    Precision="240"
+    ColumnName="ADDRESS_LINE_1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="AddressLine2"
+    Precision="240"
+    ColumnName="ADDRESS_LINE_2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="AddressLine3"
+    Precision="240"
+    ColumnName="ADDRESS_LINE_3"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="PostCode"
+    Precision="20"
+    ColumnName="POST_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StartDate"
+    ColumnName="START_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <Attribute
+    Name="EndDate"
+    ColumnName="END_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <Attribute
+    Name="RevisionNumber"
+    Precision="5"
+    Scale="0"
+    ColumnName="REVISION_NUMBER"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <Attribute
+    Name="CreatedBy"
+    Precision="256"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <Attribute
+    Name="ChangedBy"
+    Precision="256"
+    ColumnName="CHANGED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_APLCNT_ADDRESS">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ChangedDate"
+    ColumnName="CHANGED_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_APLCNT_ADDRESS"/>
+  <AccessorAttribute
+    Name="ApplicantPersonalDetailsEO"
+    Association="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc.ApplicantPersonalDetailsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.applicant.entity.association.ApplicantPersonalDetailsToAddressFk1Assoc.ApplicantAddressEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="TslAplcntAddressPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TSL_APLCNT_ADDRESS_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.ApplicantAddressEO.AplcntAddressId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslAplcntAddressFk1">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_APLCNT_PER_DETAILS_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_APLCNT_ADDRESS_FK1"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.applicant.entity.ApplicantAddressEO.ApplicantId"/>
+    </AttrArray>
+  </Key>
+</Entity>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ApplicantService"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="thames.sterling.loans.model.applicant.service.ApplicantServiceImpl"
+  ComponentInterface="thames.sterling.loans.model.applicant.service.common.ApplicantService">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <ViewUsage
+    Name="ApplicantAddress"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.ApplicantAddressVO"/>
+  <ViewUsage
+    Name="EmploymentType"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.EmploymentTypeVO"/>
+  <ViewUsage
+    Name="LoanApprovalStatuses"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.LoanApprovalStatusesVO"/>
+  <ViewUsage
+    Name="LoanPurpose"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.LoanPurposeVO"/>
+  <ViewUsage
+    Name="ApplicantFianceDetails"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.ApplicantFianceDetailsVO"/>
+  <ViewUsage
+    Name="ApplicantPesonalDetails"
+    ViewObjectName="thames.sterling.loans.model.applicant.view.ApplicantPesonalDetailsVO"/>
+  <ClientInterface
+    Name="__clientInterface">
+    <Method
+      Name="initializeObjects"
+      MethodName="initializeObjects">
+      <Return
+        Name="_return_type_"
+        Type="java.util.Map"/>
+      <Parameter
+        Name="in"
+        Type="java.util.Map"/>
+    </Method>
+  </ClientInterface>
+</AppModule>

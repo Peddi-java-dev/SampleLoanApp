@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.11.57"
+                id="appliant_apply_region_appliant_apply_region_initializeObjectsPageDef"
+                Package="thames.sterling.loans.web.region.applicant.apply" SkipValidation="true">
+  <parameters/>
+  <executables/>
+  <bindings>
+    <methodAction id="initializeObjects" RequiresUpdateModel="true" Action="invokeMethod" MethodName="initializeObjects"
+                  IsViewObjectMethod="false" DataControl="ApplicantServiceDataControl"
+                  InstanceName="data.ApplicantServiceDataControl.dataProvider"
+                  ReturnName="data.ApplicantServiceDataControl.methodResults.initializeObjects_ApplicantServiceDataControl_dataProvider_initializeObjects_result">
+      <NamedData NDName="in" NDType="java.util.Map" NDValue="#{pageFlowScope.loanApplyData.data}"/>
+    </methodAction>
+  </bindings>
+</pageDefinition>

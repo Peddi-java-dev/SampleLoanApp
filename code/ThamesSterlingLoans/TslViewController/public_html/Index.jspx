@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" 
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Index" id="d1">
+            <af:messages id="m1"/>
+            <af:form id="f1">
+                <af:panelStretchLayout id="psl1">
+                    <f:facet name="start"/>
+                    <f:facet name="end"/>
+                    <f:facet name="top">
+                        <af:panelGroupLayout id="pgl1">
+                            <af:panelGroupLayout id="pgl2" halign="center" layout="horizontal">
+                            <af:spacer width="10" height="50" id="s2"/>
+                                <af:outputFormatted value="Thames Sterling Loans" id="of1"
+                                                    inlineStyle="font-size:xx-large; color:Navy;"/>
+                                <f:facet name="separator">
+                                    <af:spacer width="10" height="10" id="s1"/>
+                                </f:facet>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </f:facet>
+                    <f:facet name="bottom"/>
+                    <f:facet name="center">
+                        <af:panelGroupLayout id="pgl3">
+                            <af:spacer height="20" id="s4"/>
+                            <af:panelGroupLayout id="pgl4" layout="horizontal" halign="center">
+                                <af:outputFormatted value="Welcome to Thames Sterling Loans. Are you looking for the loan? Thames Sterling Loans provides easy, transparent, quick loan. Please fill in your details and click on Apply." id="of2"/>
+                            </af:panelGroupLayout>
+                            <af:spacer height="20" id="s5"/>
+                            <af:separator id="s3"/>
+                             <af:spacer height="20" id="s6"/>
+                            <af:panelGroupLayout id="pgl5" layout="vertical">
+                                <af:region value="#{bindings.appliantapplyregion1.regionModel}" id="r1"/>
+                            </af:panelGroupLayout>
+                        </af:panelGroupLayout>
+                    </f:facet>
+                </af:panelStretchLayout>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>

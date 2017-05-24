@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StaffEO"
+  Version="12.2.1.11.57"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="TSL_STAFF_DETAIL"
+  AliasName="StaffEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="PersonId"
+    IsNotNull="true"
+    Precision="18"
+    Scale="0"
+    ColumnName="PERSON_ID"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_STAFF_DETAIL"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="Title"
+    Precision="20"
+    ColumnName="TITLE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="20"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="FirstName"
+    Precision="240"
+    ColumnName="FIRST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="MiddleName"
+    Precision="240"
+    ColumnName="MIDDLE_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastName"
+    Precision="240"
+    ColumnName="LAST_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StaffJobRole"
+    Precision="18"
+    Scale="0"
+    ColumnName="STAFF_JOB_ROLE"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_STAFF_DETAIL"/>
+  <Attribute
+    Name="WorkPhoneNumber"
+    Precision="60"
+    ColumnName="WORK_PHONE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="60"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="WorkDeskNumber"
+    Precision="50"
+    ColumnName="WORK_DESK_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="WorkLocation"
+    Precision="240"
+    ColumnName="WORK_LOCATION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LineManager"
+    Precision="18"
+    Scale="0"
+    ColumnName="LINE_MANAGER"
+    SQLType="NUMERIC"
+    Type="java.lang.Long"
+    ColumnType="NUMBER"
+    TableName="TSL_STAFF_DETAIL"/>
+  <Attribute
+    Name="RevisionNumber"
+    Precision="5"
+    Scale="0"
+    ColumnName="REVISION_NUMBER"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="TSL_STAFF_DETAIL"/>
+  <Attribute
+    Name="CreatedBy"
+    Precision="256"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_STAFF_DETAIL"/>
+  <Attribute
+    Name="ChangedBy"
+    Precision="256"
+    ColumnName="CHANGED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TSL_STAFF_DETAIL">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="256"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ChangedDate"
+    ColumnName="CHANGED_DATE"
+    SQLType="TIMESTAMP"
+    Type="java.sql.Timestamp"
+    ColumnType="TIMESTAMP"
+    TableName="TSL_STAFF_DETAIL"/>
+  <AccessorAttribute
+    Name="LoanAgreementsEO"
+    Association="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc"
+    AssociationEnd="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc.LoanAgreementsEO"
+    AssociationOtherEnd="thames.sterling.loans.model.loanengine.entity.association.TslLoanAgreementsFk3Assoc.StaffEO"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <AccessorAttribute
+    Name="StaffEO1"
+    Association="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc.StaffEO1"
+    AssociationOtherEnd="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc.StaffEO"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="StaffEO"
+    Association="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc"
+    AssociationEnd="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc.StaffEO"
+    AssociationOtherEnd="thames.sterling.loans.model.loanengine.entity.association.TslStaffDetailFk1Assoc.StaffEO1"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="TslStaffDetailPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TSL_STAFF_DETAIL_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.StaffEO.PersonId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TslStaffDetailFk2">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="TSL_STAFF_DETAIL_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="TSL_STAFF_DETAIL_FK2"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="thames.sterling.loans.model.loanengine.entity.StaffEO.LineManager"/>
+    </AttrArray>
+  </Key>
+</Entity>

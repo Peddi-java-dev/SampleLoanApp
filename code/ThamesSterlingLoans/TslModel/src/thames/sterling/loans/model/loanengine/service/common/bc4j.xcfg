@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="thames.sterling.loans.model.loanengine.service.LoanEngineService">
+    <AppModuleConfig name="LoanEngineServiceLocal" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.loanengine.service.LoanEngineService"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.loanengine.service.LoanEngineService"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="LoanEngineServiceShared" jbo.project="thames.sterling.loans.model.TslModel"
+                     ApplicationName="thames.sterling.loans.model.loanengine.service.LoanEngineService"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/tsldbDS"/>
+      <Security AppModuleJndiName="thames.sterling.loans.model.loanengine.service.LoanEngineService"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>
