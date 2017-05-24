@@ -1,0 +1,18 @@
+Database Design Model available at database/DataBaseDesignModel.png
+
+Database:
+Install oracle database 11g/12c
+Either use the existed db user or create new user. 
+Run the database/DatabaseScripts.sql script to create the database objecti.
+
+
+Code: 
+Downloand oracle jdeveloper IDE from the http://www.oracle.com/technetwork/developer-tools/jdev/downloads/jdev12210download-3046390.html
+Install it using doc https://docs.oracle.com/middleware/12211/jdev/install/toc.htm
+
+Open the code/ThamesSterlingLoans/ThamesSterlingLoansApp.jws file in the Jdeveloper IDE to navigate the code.
+Upate the db details in the application.
+Build the projects and application. Deploy to the weblogic application server.
+ 
+
+
