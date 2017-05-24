@@ -1,9 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
-   <hash n="dataTypeSettings">
-      <value n="databaseType" v="Oracle Database"/>
-      <value n="databaseVersion" v="12102"/>
-   </hash>
-   <value n="id" v="8fa57106-5aa7-4349-8b97-14a4fd5ddd5a"/>
-   <value n="name" v="TLSDB"/>
-</ProviderSettings>
