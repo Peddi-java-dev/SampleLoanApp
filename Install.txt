@@ -3,7 +3,7 @@ Database Design Model available at database/DataBaseDesignModel.png
 Database:
 Install oracle database 11g/12c
 Either use the existed db user or create new user. 
-Run the database/DatabaseScripts.sql script to create the database objecti.
+Run the database/DatabaseScripts.sql script to create the database objects.
 
 
 Code: 
